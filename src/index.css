@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  max-width: 500px;
+  background-color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
